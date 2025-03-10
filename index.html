@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convite Especial</title>
+    <link rel="icon" href="icon/coração-azul.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> <!-- Efeito de confete -->
 </head>
@@ -43,9 +44,14 @@
         <!-- Detalhes do convite (invisíveis até aceitar) -->
         <div id="details" class="hidden">
             <p>Beleza, pelo visto você prefere <span id="chosen-day"></span>, então nesse dia você será minha prioridade.</p>
-            <!-- Removendo a linha abaixo que exibia "O horário será entre" -->
             <p>Eu vou lhe buscar onde você estiver e depois vamos juntos ao restaurante surpresa!<br></p>
             <p>Mal posso esperar para te ver de novo 💙</p>
+        </div>
+
+        <!-- Cronômetro e mensagem -->
+        <div id="countdown-container" class="hidden">
+            <p id="countdown-message">Literalmente eu contando os segundos para poder estar do seu lado:</p>
+            <div id="countdown"></div>
         </div>
 
     </div>

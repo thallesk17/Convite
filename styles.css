@@ -132,3 +132,24 @@ ul li {
     font-weight: bold;
     color: #934838; /* Cor do texto de detalhes */
 }
+
+/* Estilos para o cronômetro */
+#countdown-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#countdown-message {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 2rem;
+    color: #136cb4; /* Cor amarela para destacar o cronômetro */
+    font-family: 'Courier New', Courier, monospace;
+}
