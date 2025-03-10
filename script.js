@@ -4,10 +4,10 @@ document.getElementById('button1').addEventListener('click', function() {
     this.style.display = 'none';
 });
 
-document.getElementById('response').addEventListener('submit', function(event) {
+document.getElementById('availability-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const day = document.getElementById('day').value;
+    const day = document.getElementById('day').value; // Captura o valor selecionado
     let hourRange = '';
 
     // Definir o horário com base no dia escolhido
