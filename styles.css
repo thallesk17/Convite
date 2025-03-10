@@ -10,42 +10,84 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
+    background-image: url('https://www.example.com/background.jpg'); /* Imagem de fundo romântica */
+    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
 .invitation {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
 }
 
 h1 {
-    color: #e63946;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ff477e;
+    margin-bottom: 20px;
 }
 
 p {
-    color: #333;
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.1rem;
+    margin: 15px 0;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #e63946;
-    color: #fff;
+    padding: 12px 25px;
+    background-color: #ff477e;
+    color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d62828;
+    background-color: #e12b58;
 }
 
 .hidden {
     display: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+select {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+#submit-day {
+    padding: 10px 20px;
+    background-color: #ff477e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#submit-day:hover {
+    background-color: #e12b58;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
 }

@@ -9,15 +9,39 @@
 <body>
     <div class="invitation">
         <h1>Convite Especial para Você!</h1>
-        <p>Oi amor, eu quero te fazer um convite muito especial...</p>
+        <p>Oi, amor! Eu tenho uma surpresa para você...</p>
         <button id="button1">Aceitar o Convite</button>
-        <div id="response" class="hidden">
-            <p>Mal posso esperar para te ver! ❤️</p>
-            <button id="button2">Ver Detalhes</button>
+        
+        <div id="info" class="hidden">
+            <p>Para que você possa escolher o dia que ficará mais livre para o nosso jantar, aqui estão os horários disponíveis de acordo com o restaurante:</p>
+            <ul>
+                <li><strong>Domingo a Quinta-feira:</strong> 17h - 22h</li>
+                <li><strong>Sexta-feira e Sábado:</strong> 17h - 00h</li>
+            </ul>
+            <p>Agora, escolha o dia que fica melhor para você:</p>
         </div>
+
+        <div id="response" class="hidden">
+            <form id="availability-form">
+                <label for="day">Escolha um dia:</label>
+                <select id="day">
+                    <option value="domingo">Domingo</option>
+                    <option value="segunda">Segunda-feira</option>
+                    <option value="terca">Terça-feira</option>
+                    <option value="quarta">Quarta-feira</option>
+                    <option value="quinta">Quinta-feira</option>
+                    <option value="sexta">Sexta-feira</option>
+                    <option value="sabado">Sábado</option>
+                </select>
+                
+                <button type="submit" id="submit-day">Confirmar</button>
+            </form>
+        </div>
+        
         <div id="details" class="hidden">
-            <p>O encontro será em: 20 de Março às 18h.</p>
-            <p>Prepare-se para uma noite inesquecível. 😘</p>
+            <p>Você escolheu o dia <span id="chosen-day"></span>.</p>
+            <p>Eu vou te buscar em casa e, em seguida, te levar ao restaurante surpresa! O horário será entre <span id="chosen-hour"></span>.</p>
+            <p>Prepare-se para uma noite inesquecível. Eu mal posso esperar para te ver! ❤️</p>
         </div>
     </div>
 
