@@ -10,11 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f8f8;
-    background-image: url('https://www.example.com/background.jpg'); /* Imagem de fundo romântica */
+    background-color: #3a3a98;
+    background-image: url('https://www.example.com/background.jpg'); /* Altere para a URL correta da imagem */
     background-size: cover;
     color: white;
     text-align: center;
+    transition: background-color 0.3s ease; /* Transição suave para tema */
+}
+
+body.dark-theme {
+    background-color: #333; /* Cor de fundo para o tema escuro */
 }
 
 .invitation {
@@ -23,13 +28,24 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     width: 80%;
-    max-width: 600px;
     margin: auto;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #ff477e;
+    font-size: 27px;
+    color: #934838; /* Terracota */
     margin-bottom: 20px;
 }
 
@@ -38,18 +54,35 @@ p {
     margin: 15px 0;
 }
 
+p1, p2 {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
 button {
     padding: 12px 25px;
-    background-color: #ff477e;
+    background-color: #934838; /* Terracota */
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 1.2rem;
     cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #e12b58;
+    background-color: #5a2d1f;
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+button:active {
+    background-color: #6b3d31;
+}
+
+#toggle-theme {
+    background-color: #6b3d31; /* Cor do botão de alternar tema */
+    margin-top: 20px;
 }
 
 .hidden {
@@ -60,26 +93,28 @@ form {
     margin-top: 20px;
 }
 
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: white;
+}
+
 select {
     padding: 8px;
     margin: 10px 0;
     font-size: 1rem;
     border-radius: 6px;
     border: none;
-}
-
-#submit-day {
-    padding: 10px 20px;
-    background-color: #ff477e;
+    background-color: #934838; /* Azul */
     color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
+    width: 20%;
+    text-align: center;
 }
 
-#submit-day:hover {
-    background-color: #e12b58;
+select:focus {
+    background-color: #6b3d31;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.7);
 }
 
 ul {
@@ -90,4 +125,10 @@ ul {
 ul li {
     font-size: 1.1rem;
     margin: 10px 0;
+}
+
+#details p2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #934838; /* Cor do texto de detalhes */
 }
