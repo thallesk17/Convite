@@ -7,6 +7,12 @@ document.getElementById('button1').addEventListener('click', function() {
     // Captura o valor do dia escolhido
     const day = document.getElementById('day').value;
 
+    // Se não foi selecionado um dia válido
+    if (day === 'opcao') {
+        alert("Por favor, selecione um dia.");
+        return;  // Não faz nada se não tiver seleção
+    }
+
     // Esconde o campo de seleção, o botão e o texto de introdução
     document.getElementById('select-day').classList.add('hidden');
     document.getElementById('accept-invite').classList.add('hidden');
@@ -20,6 +26,9 @@ document.getElementById('button1').addEventListener('click', function() {
     
     // Inicia o cronômetro
     startCountdown();
+
+    // Exibe o dia escolhido
+    document.getElementById('chosen-day').innerText = day; // Aqui exibimos diretamente o dia
 
     // Adiciona o efeito de confete ao confirmar o encontro
     confetti({
@@ -43,8 +52,7 @@ function startCountdown() {
         // Formata a exibição no formato MM:SS
         countdownElement.innerText = `${padZero(minutes)}:${padZero(remainingSeconds)}`;
 
-        // Você pode definir um tempo para o cronômetro parar, caso queira. Exemplo:
-        // Se o cronômetro deve contar por 10 minutos:
+        // Se o cronômetro atingir 10 minutos, para (ajuste conforme necessário)
         if (seconds >= 600) {
             clearInterval(interval);
         }
