@@ -262,8 +262,8 @@ ul li {
     /* Ajuste das imagens no cronômetro */
     #top-image img,
     #bottom-image img {
-        width: 50px; /* Menor tamanho das imagens em telas menores */
-        height: 50px;
+        width: 70px; /* Menor tamanho das imagens em telas menores */
+        height: 70px;
     }
 
     /* Flexbox no contêiner - manter as divs lado a lado em telas pequenas */
