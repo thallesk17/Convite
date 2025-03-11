@@ -56,7 +56,7 @@ h1 {
 
 /* Estilo dos parágrafos */
 p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 15px 0;
 }
 
@@ -209,7 +209,7 @@ ul li {
 
     /* Ajuste das fontes dos parágrafos e botões */
     p, button {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* Ajuste no formulário */
@@ -253,7 +253,7 @@ ul li {
 
     /* Ajuste das fontes dos parágrafos e botões */
     p, button {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     /* Ajuste no formulário */
