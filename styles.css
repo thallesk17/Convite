@@ -219,15 +219,16 @@ ul li {
     /* Ajuste das imagens no cronômetro */
     #top-image img,
     #bottom-image img {
-        width: 60px; /* Imagens menores em dispositivos móveis */
+        width: 60px; /* Tamanho das imagens */
         height: 60px;
     }
 
-    /* Flexbox no contêiner */
+    /* Flexbox no contêiner - manter as divs lado a lado em telas pequenas */
     #countdown-section {
-        flex-direction: column; /* Para empilhar as divs em dispositivos móveis */
+        flex-direction: row; /* Lado a lado em telas pequenas */
         height: auto; /* Altura automática em dispositivos móveis */
-        gap: 15px; /* Menos espaçamento entre as divs */
+        gap: 20px; /* Ajuste o espaçamento entre os elementos */
+        align-items: center; /* Alinha os itens verticalmente no centro */
     }
 }
 
@@ -261,14 +262,15 @@ ul li {
     /* Ajuste das imagens no cronômetro */
     #top-image img,
     #bottom-image img {
-        width: 50px; /* Imagens menores em dispositivos móveis */
+        width: 50px; /* Menor tamanho das imagens em telas menores */
         height: 50px;
     }
 
-    /* Flexbox no contêiner */
+    /* Flexbox no contêiner - manter as divs lado a lado em telas pequenas */
     #countdown-section {
-        flex-direction: column; /* Para empilhar as divs em dispositivos móveis */
+        flex-direction: row; /* Lado a lado em telas menores também */
         height: auto; /* Altura automática em dispositivos móveis */
-        gap: 10px; /* Menos espaçamento entre as divs */
+        gap: 10px; /* Ajuste o espaçamento entre os elementos */
+        align-items: center; /* Alinha os itens verticalmente no centro */
     }
 }
