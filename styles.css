@@ -142,23 +142,49 @@ ul li {
 
 /* Estilos para o cronômetro */
 #countdown-container {
-    margin-top: 20px;
     font-size: 1.2rem;
     color: white;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
+    position: relative;
 }
 
-#countdown-message {
-    margin-bottom: 15px;
-    font-weight: bold;
+/* Div para dividir em 3 partes */
+#countdown-section {
+    display: flex; /* Usa o flexbox */
+    flex-direction: row; /* Organiza as divs horizontalmente */
+    justify-content: center; /* Centraliza as divs horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    height: 200px; /* Ajuste o tamanho do contêiner conforme necessário */
+    gap: 20px; /* Espaçamento entre os elementos */
 }
 
+/* Estilo de cada parte (imagem e cronômetro) */
+.countdown-part {
+    display: flex;
+    flex-direction: column; /* Se quiser que cada item dentro da partição fique vertical, mantendo a estrutura atual */
+    justify-content: center; /* Centraliza o conteúdo dentro da partição */
+    align-items: center; /* Centraliza horizontalmente o conteúdo dentro de cada partição */
+}
+
+/* Estilo da imagem de cima */
+#top-image img {
+    width: 100px; /* Ajuste o tamanho da imagem */
+    height: auto;
+}
+
+/* Estilo do cronômetro */
 #countdown {
     font-size: 2rem;
-    color: #136cb4; /* Cor amarela para destacar o cronômetro */
+    color: #136cb4;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilo da imagem de baixo */
+#bottom-image img {
+    width: 100px; /* Ajuste o tamanho da imagem */
+    height: 100px;
 }
 
 /* Media Queries para dispositivos móveis */
@@ -177,7 +203,7 @@ ul li {
 
     /* Ajuste do título */
     h1 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     /* Ajuste das fontes dos parágrafos e botões */
