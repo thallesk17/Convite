@@ -215,6 +215,20 @@ ul li {
     select {
         width: 100%;
     }
+
+    /* Ajuste das imagens no cronômetro */
+    #top-image img,
+    #bottom-image img {
+        width: 60px; /* Imagens menores em dispositivos móveis */
+        height: 60px;
+    }
+
+    /* Flexbox no contêiner */
+    #countdown-section {
+        flex-direction: column; /* Para empilhar as divs em dispositivos móveis */
+        height: auto; /* Altura automática em dispositivos móveis */
+        gap: 15px; /* Menos espaçamento entre as divs */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -242,5 +256,19 @@ ul li {
     /* Ajuste no formulário */
     select {
         width: 100%;
+    }
+
+    /* Ajuste das imagens no cronômetro */
+    #top-image img,
+    #bottom-image img {
+        width: 50px; /* Imagens menores em dispositivos móveis */
+        height: 50px;
+    }
+
+    /* Flexbox no contêiner */
+    #countdown-section {
+        flex-direction: column; /* Para empilhar as divs em dispositivos móveis */
+        height: auto; /* Altura automática em dispositivos móveis */
+        gap: 10px; /* Menos espaçamento entre as divs */
     }
 }
